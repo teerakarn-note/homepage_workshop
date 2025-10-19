@@ -145,6 +145,12 @@ function Index() {
                     icon: 'success',
                     timer: 1000,
                 })
+                document.getElementById('modalCart_btnClose').click();
+                setCustomerName('');
+                setCustomerPhone('');
+                setCustomerAddress('');
+                setPayDate(new Date());
+                setPayTime('');
             }
         }
         catch (e) {
