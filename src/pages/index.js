@@ -27,6 +27,7 @@ function Index() {
         fetchData();
         fetchDataFromLocal();
     }, []);
+    //เอาข้อมูลมา show
     const fetchData = async () => {
         try {
             const res = await axios.get(config.apiPath + '/product/list');
